@@ -1,12 +1,7 @@
-<<<<<<< HEAD
 from datetime import datetime
 
 from django.views.generic import TemplateView
 
-=======
-from django.views.generic import TemplateView
-
->>>>>>> main
 
 class MainPageView(TemplateView):
     template_name = "mainapp/index.html"
@@ -15,7 +10,6 @@ class MainPageView(TemplateView):
 class NewsPageView(TemplateView):
     template_name = "mainapp/news.html"
 
-<<<<<<< HEAD
     def get_context_data(self, **kwargs):
         # Get all previous data
         context = super().get_context_data(**kwargs)
@@ -33,8 +27,6 @@ class NewsWithPaginatorView(NewsPageView):
         context["page_num"] = page
         return context
 
-=======
->>>>>>> main
 
 class CoursesPageView(TemplateView):
     template_name = "mainapp/courses_list.html"
